@@ -1,0 +1,30 @@
+{
+  "name": "request",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "vehicle_id": {
+      "type": "number",
+      "required": true
+    },
+    "creation_ts": {
+      "type": "date",
+      "required": true
+    },
+    "geo_position": {
+      "type": "object"
+    },
+    "photos": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

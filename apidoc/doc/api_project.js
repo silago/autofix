@@ -1,0 +1,1 @@
+define({  "name": "AutoFix API",  "version": "v1",  "description": "",  "title": "AutoFix API",  "url": "/api/v1",  "template": {    "withCompare": false,    "withGenerator": true  },  "sampleUrl": false,  "apidoc": "0.2.0",  "generator": {    "name": "apidoc",    "time": "2015-12-10T09:23:25.401Z",    "url": "http://apidocjs.com",    "version": "0.13.1"  }});

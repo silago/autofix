@@ -1,0 +1,11 @@
+{
+  "name": "AutoFix API",
+  "version": "v1",
+  "description": "",
+  "title": "AutoFix API",
+  "url" : "/api/v1",
+    "template": {
+    "withCompare": false,
+    "withGenerator": true
+    }
+}

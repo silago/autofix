@@ -1,0 +1,30 @@
+{
+  "name": "vehicle",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "vendor": {
+      "type": "string",
+      "required": true
+    },
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "vin": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
