@@ -39,5 +39,21 @@
   "request": {
     "dataSource": "db",
     "public": true
+  },
+  "photo": {
+    "dataSource": "db",
+    "public": true
+  },
+  "partner": {
+    "dataSource": "db",
+    "public": true
+  },
+  "estimation": {
+    "dataSource": "db",
+    "public": true
+  },
+  "file": {
+    "dataSource": "filestorage",
+    "public": true
   }
 }

@@ -15,6 +15,7 @@
   "session": {},
   "auth": {},
   "parse": {},
+
   "routes": {
     "loopback#rest": {
       "paths": [

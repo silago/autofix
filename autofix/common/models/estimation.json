@@ -1,0 +1,28 @@
+{
+  "name": "estimation",
+  "plural": "estimations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "estimation_price": {
+      "type": "number",
+      "required": true
+    },
+    "comments": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "partner": {
+      "type": "belongsTo",
+      "model": "partner",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

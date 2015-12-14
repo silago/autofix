@@ -1,7 +1,21 @@
 var loopback = require('loopback');
 var boot = require('loopback-boot');
-
+var multer = require('multer');
+var upload = multer({ dest: './uploads/',
+    rename: function(fieldname,filename,req,res) {
+    }
+});
 var app = module.exports = loopback();
+var fs = require('fs')
+
+app.post('/api/v1/photo/upload', upload.single('photo'), function(req, res){
+    var f = req.file
+    console.log(f) // form files
+    fs.rename(f.path,f.path+'_'+f.originalname,function() {
+        console.log('renamed');
+    });
+    res.status(204).end()
+});
 
 app.start = function() {
   // start the web server

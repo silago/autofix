@@ -12,19 +12,27 @@
     },
     "creation_ts": {
       "type": "date",
-      "required": true
+      "required": false
     },
     "geo_position": {
       "type": "object"
-    },
-    "photos": {
-      "type": [
-        "object"
-      ]
     }
   },
+  "hidden":["creation_ts"],
+  "fields":{
+    "id":true
+  },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "photo": {
+      "type": "hasMany",
+      "model": "photo"
+    },
+    "estimations": {
+      "type": "hasMany",
+      "model": "estimation"
+    }
+  },
   "acls": [],
   "methods": {}
 }
